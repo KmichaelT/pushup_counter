@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <!-- Require the peer dependencies of pose-detection. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+
+  <!-- You must explicitly require a TF.js backend if you're not using the TF.js union bundle. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+  <!-- Alternatively you can use the WASM backend: <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body id="bddy">
+
+  <div class="main_container">
+
+    <div id="counter_txt" class="counter_txt">
+
+    </div>
+
+    <div id="pushup_animation" class="pushup_animation">
+      <div class="status_text" id="status"></div>
+      <img class="pushup-gif" src="pushup.gif"> </img>
+      <img class="phone" id="phone_view" src="camview.svg" alt=""></img>
+      <div class="text">To begin place your camera as shown above to capture your whole body. once the screen will turn
+        green, get in the starting posion start pushing!</div>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="webcam.js"></script>
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+</body>
+
+</html>
