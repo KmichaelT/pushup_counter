@@ -47,7 +47,7 @@ async function videoReady() {
 }
 
 async function setup() {
-  texxt.innerHTML='<h3>Loading...</h3>'
+  texxt.innerHTML='<h3>Camera is loading...</h3>'
   // var msg = new SpeechSynthesisUtterance('Loading, please wait...');
   // window.speechSynthesis.speak(msg);
   createCanvas(640, 480);
@@ -87,7 +87,7 @@ function draw() {
   if (poses && poses.length > 0) {
     let pushupString = `Push-ups completed: ${reps}`;
     text(pushupString, 100, 90);
-    texxt.innerHTML='<h2>Camera is ready!</h2>'
+    texxt.innerHTML='<h3>Camera is ready!</h3>'
   }
   else {
 
